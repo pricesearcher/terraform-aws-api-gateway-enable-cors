@@ -58,7 +58,7 @@ resource "aws_api_gateway_integration_response" "_" {
   }
 
   depends_on = [
-    "aws_api_gateway_integration._",
+    aws_api_gateway_integration._
   ]
 }
 
@@ -81,6 +81,6 @@ resource "aws_api_gateway_method_response" "_" {
   }
 
   depends_on = [
-    "aws_api_gateway_method._",
+    aws_api_gateway_method._
   ]
 }
